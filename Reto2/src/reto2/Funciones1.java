@@ -15,7 +15,7 @@ public class Funciones1 {
     public static double kmAmillas(double km) {
         return km / 1.60934;
     }
-
+    //VOID DE MILLAS
     public static void menuLongitud(Scanner sc) {
         int op;
         do {
@@ -36,7 +36,7 @@ public class Funciones1 {
                     System.out.println("Resultado: " + kmAmillas(k) + " millas");
                 }
                 case 0 -> System.out.println("Volviendo...");
-                default -> System.out.println("❌ Opción no válida.");
+                default -> System.out.println(" Opción no válida.");
             }
 
         } while (op != 0);
@@ -53,6 +53,7 @@ public class Funciones1 {
         return lb / 2.20462;
     }
 
+    // VOID DE MENU PESO 
     public static void menuPeso(Scanner sc) {
         int op;
         do {
@@ -73,7 +74,7 @@ public class Funciones1 {
                     System.out.println("Resultado: " + librasAkg(l) + " kg");
                 }
                 case 0 -> System.out.println("Volviendo...");
-                default -> System.out.println("❌ Opción no válida.");
+                default -> System.out.println(" Opción no válida.");
             }
 
         } while (op != 0);
