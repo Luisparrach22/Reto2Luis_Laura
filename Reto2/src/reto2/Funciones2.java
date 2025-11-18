@@ -1,9 +1,11 @@
 package reto2;
 
+import java.util.Scanner;
+
 import reto2.Funciones;
 
 public class Funciones2 {
-	
+
 	
 	public static double converCaF (double a) {
 
@@ -55,5 +57,66 @@ public class Funciones2 {
 		// TODO Auto-generated method stub
 
 	}
+	
 
+
+//VOID DE MILLAS
+public static void MenuconverCaF (Scanner sc) {
+    int op;
+    do {
+        System.out.println("\n--- MENÚ Convertir ---");
+        System.out.println("1. Celfis → Farerheit ");
+        System.out.println("2. farenhet  → Celsiu");
+        System.out.println("0. Volver al menú principal");
+
+        op = Funciones.dimeEntero("Elige una opción:", sc);
+
+        switch (op) {
+            case 1 -> {
+                double m = Funciones.dimeDouble("Introduce Celsios:", sc);
+                System.out.println("Resultado: "  + converCaF(m) + " Celsius");
+            }
+            
+            case 2 -> {
+                double m = Funciones.dimeDouble("Introduce Farenhet:", sc);
+                System.out.println("Resultado: "  + converFaC(m) + " Farenhet");
+            }
+
+            case 0 -> System.out.println("Volviendo...");
+            default -> System.out.println(" Opción no válida.");
+        }
+
+    } while (op != 0);
 }
+
+public static void MenuVolumen (Scanner sc) {
+	int op;
+	 do {
+	        System.out.println("\n--- MENÚ Volumen  ---");
+	        System.out.println("1. listros → Galones ");
+	        System.out.println("2. Galones  → litros");
+	        System.out.println("0. Volver al menú principal");
+
+	        op = Funciones.dimeEntero("Elige una opción:", sc);
+
+	        switch (op) {
+	            case 1 -> {
+	                double m = Funciones.dimeDouble("Introduce litros:", sc);
+	                System.out.println("Resultado: "  + conveLaG(m) + " Galones");
+	            }
+	            
+	            case 2 -> {
+	                double m = Funciones.dimeDouble("Introduce Galones:", sc);
+	                System.out.println("Resultado: "  + conveGaL(m) + " Litros");
+	            }
+
+	            case 0 -> System.out.println("Volviendo...");
+	            default -> System.out.println(" Opción no válida.");
+	        }
+
+	    } while (op != 0);
+	
+	
+}
+}
+

@@ -22,8 +22,8 @@ public class Reto2 {
             switch (opcion) {
                 case 1 -> Funciones1.menuLongitud(sc);
                 case 2 -> Funciones1.menuPeso(sc);
-                //case 3 -> Funciones2.menuTemperatura(sc);
-                //case 4 -> Funciones2.menuVolumen(sc);
+                case 3 -> Funciones2.MenuconverCaF(sc);
+                case 4 -> Funciones2.MenuVolumen(sc);
                 case 0 -> System.out.println("¡Hasta la próxima!");
                 default -> System.out.println(" Opción no válida.");
             }
